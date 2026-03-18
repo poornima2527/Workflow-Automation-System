@@ -1,0 +1,497 @@
+[
+  {
+    "id": "1",
+    "name": "Expense Approval",
+    "version": 3,
+    "is_active": true,
+    "input_schema": {
+      "amount": {
+        "type": "number",
+        "required": true
+      },
+      "department": {
+        "type": "string",
+        "required": true
+      },
+      "employee_name": {
+        "type": "string",
+        "required": true
+      },
+      "expense_type": {
+        "type": "string",
+        "required": true,
+        "allowed_values": [
+          "Travel",
+          "Meals",
+          "Office",
+          "Training"
+        ]
+      },
+      "description": {
+        "type": "string",
+        "required": false
+      }
+    },
+    "start_step_id": "1",
+    "created_at": "2026-03-16T05:22:38.836Z",
+    "updated_at": "2026-03-18T04:40:07.318Z"
+  },
+  {
+    "id": "2",
+    "name": "Employee Onboarding Approval",
+    "version": 3,
+    "is_active": true,
+    "input_schema": {
+      "employee_name": {
+        "type": "string",
+        "required": true
+      },
+      "email": {
+        "type": "string",
+        "required": true
+      },
+      "department": {
+        "type": "string",
+        "required": true
+      },
+      "position": {
+        "type": "string",
+        "required": true
+      },
+      "start_date": {
+        "type": "string",
+        "required": true
+      },
+      "salary": {
+        "type": "number",
+        "required": true
+      },
+      "is_remote": {
+        "type": "boolean",
+        "required": false
+      }
+    },
+    "start_step_id": "1",
+    "created_at": "2026-03-16T05:22:38.838Z",
+    "updated_at": "2026-03-18T04:41:28.328Z"
+  },
+  {
+    "id": "3",
+    "name": "Payroll Processing  Approval",
+    "input_schema": {
+      "amount": {
+        "type": "number",
+        "required": true
+      },
+      "description": {
+        "type": "string",
+        "required": false
+      }
+    },
+    "version": 4,
+    "is_active": true,
+    "created_at": "2026-03-16T05:39:30.542Z",
+    "updated_at": "2026-03-18T04:41:43.678Z"
+  },
+  {
+    "name": "Customer Support Ticket  Approval",
+    "input_schema": {
+      "customer_name": {
+        "type": "string",
+        "required": true
+      },
+      "email": {
+        "type": "string",
+        "required": true
+      },
+      "issue_type": {
+        "type": "string",
+        "required": true,
+        "allowed_values": [
+          "Technical",
+          "Billing",
+          "Account",
+          "General"
+        ]
+      },
+      "priority": {
+        "type": "string",
+        "required": true,
+        "allowed_values": [
+          "Low",
+          "Medium",
+          "High",
+          "Critical"
+        ]
+      },
+      "description": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "start_step_id": "1",
+    "version": 3,
+    "is_active": true,
+    "id": "5",
+    "created_at": "2026-03-16T05:49:54.200Z",
+    "updated_at": "2026-03-18T04:41:56.674Z"
+  },
+  {
+    "name": "Document Approval  Approval",
+    "input_schema": {
+      "document_title": {
+        "type": "string",
+        "required": true
+      },
+      "document_type": {
+        "type": "string",
+        "required": true,
+        "allowed_values": [
+          "Contract",
+          "Report",
+          "Proposal",
+          "Invoice"
+        ]
+      },
+      "submitter_name": {
+        "type": "string",
+        "required": true
+      },
+      "department": {
+        "type": "string",
+        "required": true
+      },
+      "urgency_level": {
+        "type": "string",
+        "required": true,
+        "allowed_values": [
+          "Normal",
+          "Urgent",
+          "Critical"
+        ]
+      }
+    },
+    "start_step_id": "1",
+    "version": 3,
+    "is_active": true,
+    "id": "6",
+    "created_at": "2026-03-16T05:49:54.214Z",
+    "updated_at": "2026-03-18T04:42:10.329Z"
+  },
+  {
+    "name": "Leave Request  Approval",
+    "input_schema": {
+      "employee_name": {
+        "type": "string",
+        "required": true
+      },
+      "employee_id": {
+        "type": "string",
+        "required": true
+      },
+      "leave_type": {
+        "type": "string",
+        "required": true,
+        "allowed_values": [
+          "Annual",
+          "Sick",
+          "Personal",
+          "Maternity"
+        ]
+      },
+      "start_date": {
+        "type": "string",
+        "required": true
+      },
+      "end_date": {
+        "type": "string",
+        "required": true
+      },
+      "reason": {
+        "type": "string",
+        "required": false
+      },
+      "backup_contact": {
+        "type": "string",
+        "required": true
+      }
+    },
+    "start_step_id": "1",
+    "version": 4,
+    "is_active": true,
+    "id": "7",
+    "created_at": "2026-03-16T05:49:54.214Z",
+    "updated_at": "2026-03-18T04:42:24.179Z"
+  },
+  {
+    "id": "8",
+    "name": "Travel Request Approval",
+    "input_schema": {
+      "amount": {
+        "type": "number",
+        "required": true
+      },
+      "description": {
+        "type": "string",
+        "required": false
+      }
+    },
+    "version": 2,
+    "is_active": true,
+    "created_at": "2026-03-16T06:05:21.223Z",
+    "updated_at": "2026-03-18T04:24:47.396Z"
+  },
+  {
+    "id": "9",
+    "name": "IT Support Request  Approval",
+    "input_schema": {
+      "amount": {
+        "type": "number",
+        "required": true
+      },
+      "description": {
+        "type": "string",
+        "required": false
+      }
+    },
+    "version": 3,
+    "is_active": true,
+    "created_at": "2026-03-16T06:37:02.201Z",
+    "updated_at": "2026-03-18T04:39:37.284Z"
+  },
+  {
+    "id": "11",
+    "name": "Purchase Order Approval",
+    "input_schema": {
+      "amount": {
+        "type": "number",
+        "required": true
+      },
+      "description": {
+        "type": "string",
+        "required": false
+      }
+    },
+    "version": 3,
+    "is_active": true,
+    "created_at": "2026-03-16T06:39:21.792Z",
+    "updated_at": "2026-03-18T04:26:23.358Z"
+  },
+  {
+    "id": "12",
+    "name": "Vendor Management  Approval",
+    "input_schema": {
+      "amount": {
+        "type": "number",
+        "required": true
+      },
+      "description": {
+        "type": "string",
+        "required": false
+      }
+    },
+    "version": 3,
+    "is_active": true,
+    "created_at": "2026-03-16T06:46:00.020Z",
+    "updated_at": "2026-03-18T04:42:48.725Z"
+  },
+  {
+    "id": "13",
+    "name": "Performance Review Approval",
+    "input_schema": {
+      "amount": {
+        "type": "number",
+        "required": "true"
+      }
+    },
+    "version": 3,
+    "is_active": true,
+    "created_at": "2026-03-16T06:52:24.947Z",
+    "updated_at": "2026-03-18T04:43:08.914Z"
+  },
+  {
+    "id": "14",
+    "name": "Training Request Approval",
+    "input_schema": "{\"amount\": {\"type\": \"number\", \"required\": true}, \"description\": {\"type\": \"string\", \"required\": false}}",
+    "version": 3,
+    "is_active": true,
+    "created_at": "2026-03-16T06:53:42.252Z",
+    "updated_at": "2026-03-18T04:43:31.452Z"
+  },
+  {
+    "id": "15",
+    "name": "Asset Allocation Approval",
+    "input_schema": {
+      "amount": {
+        "type": "number",
+        "required": true
+      },
+      "description": {
+        "type": "string",
+        "required": false
+      }
+    },
+    "version": 3,
+    "is_active": true,
+    "created_at": "2026-03-16T07:00:03.020Z",
+    "updated_at": "2026-03-18T04:44:09.533Z"
+  },
+  {
+    "id": "16",
+    "name": "Reimbursement Approval ",
+    "input_schema": {
+      "amount": {
+        "type": "number",
+        "required": true
+      },
+      "description": {
+        "type": "string",
+        "required": false
+      }
+    },
+    "version": 3,
+    "is_active": true,
+    "created_at": "2026-03-16T07:00:38.195Z",
+    "updated_at": "2026-03-18T04:43:54.087Z"
+  },
+  {
+    "id": "17",
+    "name": "Internal Audit Approval",
+    "input_schema": {
+      "amount": {
+        "type": "number",
+        "required": true
+      },
+      "description": {
+        "type": "string",
+        "required": false
+      }
+    },
+    "version": 3,
+    "is_active": true,
+    "created_at": "2026-03-16T07:08:05.974Z",
+    "updated_at": "2026-03-18T04:44:24.542Z"
+  },
+  {
+    "id": "18",
+    "name": "Project Approval Approval",
+    "input_schema": {
+      "id": "workflow-001",
+      "name": "Expense Approval",
+      "version": 1,
+      "is_active": true,
+      "start_step_id": "step-001",
+      "input_schema": {
+        "amount": {
+          "type": "number",
+          "required": true
+        },
+        "country": {
+          "type": "string",
+          "required": true
+        },
+        "priority": {
+          "type": "string",
+          "required": true
+        }
+      }
+    },
+    "version": 3,
+    "is_active": true,
+    "created_at": "2026-03-16T07:09:18.083Z",
+    "updated_at": "2026-03-18T04:44:42.292Z"
+  },
+  {
+    "id": "19",
+    "name": "Shift Change Request Approval",
+    "input_schema": {
+      "amount": 1200,
+      "department": "Finance",
+      "employee_name": "Poornima ",
+      "expense_type": "Training",
+      "description": "Shift Change Request Workflow"
+    },
+    "version": 4,
+    "is_active": true,
+    "created_at": "2026-03-16T07:32:37.867Z",
+    "updated_at": "2026-03-18T04:45:05.896Z"
+  },
+  {
+    "id": "20",
+    "name": "Budget Approval Approval",
+    "version": 3,
+    "is_active": true,
+    "input_schema": {
+      "amount": {
+        "type": "number",
+        "required": true
+      },
+      "employee_name": {
+        "type": "string",
+        "required": true
+      },
+      "department": {
+        "type": "string",
+        "required": true
+      },
+      "expense_type": {
+        "type": "string",
+        "required": true
+      },
+      "description": {
+        "type": "string",
+        "required": false
+      }
+    },
+    "created_at": "2026-03-17T00:00:00.000Z",
+    "updated_at": "2026-03-18T04:45:25.000Z"
+  },
+  {
+    "id": "21",
+    "name": "Work From Home Request Approval",
+    "version": 3,
+    "is_active": true,
+    "input_schema": {
+      "amount": {
+        "type": "number",
+        "required": true
+      },
+      "employee_name": {
+        "type": "string",
+        "required": true
+      },
+      "department": {
+        "type": "string",
+        "required": true
+      },
+      "expense_type": {
+        "type": "string",
+        "required": true
+      },
+      "description": {
+        "type": "string",
+        "required": false
+      }
+    },
+    "created_at": "2026-03-17T00:00:00.000Z",
+    "updated_at": "2026-03-18T04:45:48.358Z"
+  },
+  {
+    "id": "22",
+    "name": "Employee Transfer Approval",
+    "input_schema": {
+      "amount": {
+        "type": "number",
+        "required": true
+      },
+      "description": {
+        "type": "string",
+        "required": false
+      }
+    },
+    "version": 3,
+    "is_active": true,
+    "created_at": "2026-03-16T08:59:42.526Z",
+    "updated_at": "2026-03-18T04:46:10.443Z"
+  }
+]

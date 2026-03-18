@@ -1,0 +1,399 @@
+[
+  {
+    "id": "50",
+    "workflow_id": "20",
+    "name": "Submit Expense",
+    "step_type": "task",
+    "order": 1,
+    "metadata": {
+      "instructions": "Employee submits expense details"
+    },
+    "created_at": "2026-03-17T00:00:00.000Z",
+    "updated_at": "2026-03-17T00:00:00.000Z"
+  },
+  {
+    "id": "51",
+    "workflow_id": "20",
+    "name": "Manager Review",
+    "step_type": "approval",
+    "order": 2,
+    "metadata": {
+      "assignee_email": "manager@company.com",
+      "instructions": "Manager reviews and approves expense"
+    },
+    "created_at": "2026-03-17T00:00:00.000Z",
+    "updated_at": "2026-03-17T00:00:00.000Z"
+  },
+  {
+    "id": "52",
+    "workflow_id": "20",
+    "name": "Finance Approval",
+    "step_type": "approval",
+    "order": 3,
+    "metadata": {
+      "assignee_email": "finance@company.com",
+      "instructions": "Finance team approves large expenses"
+    },
+    "created_at": "2026-03-17T00:00:00.000Z",
+    "updated_at": "2026-03-17T00:00:00.000Z"
+  },
+  {
+    "id": "53",
+    "workflow_id": "20",
+    "name": "Process Payment",
+    "step_type": "task",
+    "order": 4,
+    "metadata": {
+      "instructions": "Finance team processes payment"
+    },
+    "created_at": "2026-03-17T00:00:00.000Z",
+    "updated_at": "2026-03-17T00:00:00.000Z"
+  },
+  {
+    "id": "54",
+    "workflow_id": "20",
+    "name": "Notify Employee",
+    "step_type": "notification",
+    "order": 5,
+    "metadata": {
+      "notification_channel": "email",
+      "instructions": "Notify employee of payment status"
+    },
+    "created_at": "2026-03-17T00:00:00.000Z",
+    "updated_at": "2026-03-17T00:00:00.000Z"
+  },
+  {
+    "id": "55",
+    "workflow_id": "21",
+    "name": "Submit Request",
+    "step_type": "task",
+    "order": 1,
+    "metadata": {
+      "instructions": "Employee submits request for approval"
+    },
+    "created_at": "2026-03-17T00:00:00.000Z",
+    "updated_at": "2026-03-17T00:00:00.000Z"
+  },
+  {
+    "id": "56",
+    "workflow_id": "21",
+    "name": "Manager Approval",
+    "step_type": "approval",
+    "order": 2,
+    "metadata": {
+      "assignee_email": "manager@company.com",
+      "instructions": "Manager reviews and approves request"
+    },
+    "created_at": "2026-03-17T00:00:00.000Z",
+    "updated_at": "2026-03-17T00:00:00.000Z"
+  },
+  {
+    "id": "57",
+    "workflow_id": "21",
+    "name": "Finance Approval",
+    "step_type": "approval",
+    "order": 3,
+    "metadata": {
+      "assignee_email": "finance@company.com",
+      "instructions": "Finance team reviews and approves large amounts"
+    },
+    "created_at": "2026-03-17T00:00:00.000Z",
+    "updated_at": "2026-03-17T00:00:00.000Z"
+  },
+  {
+    "id": "1",
+    "workflow_id": "1",
+    "name": "Submit Expense",
+    "step_type": "task",
+    "order": 1,
+    "metadata": {
+      "instructions": "Employee submits expense report with all required details"
+    },
+    "created_at": "2026-03-16T05:22:38.838Z",
+    "updated_at": "2026-03-16T05:22:38.838Z"
+  },
+  {
+    "id": "2",
+    "workflow_id": "1",
+    "name": "Manager Review",
+    "step_type": "approval",
+    "order": 2,
+    "metadata": {
+      "assignee_email": "manager@company.com",
+      "instructions": "Review expense details and approve or reject"
+    },
+    "created_at": "2026-03-16T05:22:38.838Z",
+    "updated_at": "2026-03-16T05:22:38.838Z"
+  },
+  {
+    "id": "3",
+    "workflow_id": "1",
+    "name": "Finance Approval",
+    "step_type": "approval",
+    "order": 3,
+    "metadata": {
+      "assignee_email": "finance@company.com",
+      "instructions": "Review and approve expenses over $1000"
+    },
+    "created_at": "2026-03-16T05:22:38.838Z",
+    "updated_at": "2026-03-16T05:22:38.838Z"
+  },
+  {
+    "id": "4",
+    "workflow_id": "1",
+    "name": "Process Payment",
+    "step_type": "task",
+    "order": 4,
+    "metadata": {
+      "instructions": "Process approved expense payment"
+    },
+    "created_at": "2026-03-16T05:22:38.838Z",
+    "updated_at": "2026-03-16T05:22:38.838Z"
+  },
+  {
+    "id": "5",
+    "workflow_id": "1",
+    "name": "Notify Employee",
+    "step_type": "notification",
+    "order": 5,
+    "metadata": {
+      "notification_channel": "email",
+      "instructions": "Send payment confirmation to employee"
+    },
+    "created_at": "2026-03-16T05:22:38.838Z",
+    "updated_at": "2026-03-16T05:22:38.838Z"
+  },
+  {
+    "id": "6",
+    "workflow_id": "2",
+    "name": "Create Employee Record",
+    "step_type": "task",
+    "order": 1,
+    "metadata": {
+      "instructions": "HR creates employee record in HR system"
+    },
+    "created_at": "2026-03-16T05:22:38.838Z",
+    "updated_at": "2026-03-16T05:22:38.838Z"
+  },
+  {
+    "id": "7",
+    "workflow_id": "2",
+    "name": "Setup Email Account",
+    "step_type": "task",
+    "order": 2,
+    "metadata": {
+      "instructions": "IT creates email account and sends credentials"
+    },
+    "created_at": "2026-03-16T05:22:38.838Z",
+    "updated_at": "2026-03-16T05:22:38.838Z"
+  },
+  {
+    "id": "8",
+    "workflow_id": "2",
+    "name": "Equipment Setup",
+    "step_type": "task",
+    "order": 3,
+    "metadata": {
+      "instructions": "IT prepares laptop and other equipment"
+    },
+    "created_at": "2026-03-16T05:22:38.838Z",
+    "updated_at": "2026-03-16T05:22:38.838Z"
+  },
+  {
+    "id": "9",
+    "workflow_id": "2",
+    "name": "Access Permissions",
+    "step_type": "approval",
+    "order": 4,
+    "metadata": {
+      "assignee_email": "it-manager@company.com",
+      "instructions": "Approve system access permissions"
+    },
+    "created_at": "2026-03-16T05:22:38.838Z",
+    "updated_at": "2026-03-16T05:22:38.838Z"
+  },
+  {
+    "id": "10",
+    "workflow_id": "2",
+    "name": "Welcome Kit",
+    "step_type": "task",
+    "order": 5,
+    "metadata": {
+      "instructions": "HR prepares welcome kit and documentation"
+    },
+    "created_at": "2026-03-16T05:22:38.838Z",
+    "updated_at": "2026-03-16T05:22:38.838Z"
+  },
+  {
+    "id": "11",
+    "workflow_id": "2",
+    "name": "Schedule Orientation",
+    "step_type": "task",
+    "order": 6,
+    "metadata": {
+      "instructions": "Schedule orientation and training sessions"
+    },
+    "created_at": "2026-03-16T05:22:38.838Z",
+    "updated_at": "2026-03-16T05:22:38.838Z"
+  },
+  {
+    "id": "12",
+    "workflow_id": "2",
+    "name": "Send Welcome Email",
+    "step_type": "notification",
+    "order": 7,
+    "metadata": {
+      "notification_channel": "email",
+      "instructions": "Send welcome email with onboarding details"
+    },
+    "created_at": "2026-03-16T05:22:38.838Z",
+    "updated_at": "2026-03-16T05:22:38.838Z"
+  },
+  {
+    "id": "13",
+    "workflow_id": "3",
+    "name": "Create Support Ticket",
+    "step_type": "task",
+    "order": 1,
+    "metadata": {
+      "instructions": "Customer support agent creates ticket with all details"
+    }
+  },
+  {
+    "id": "14",
+    "workflow_id": "3",
+    "name": "Triage and Assign",
+    "step_type": "task",
+    "order": 2,
+    "metadata": {
+      "instructions": "Senior agent triages ticket and assigns to appropriate team"
+    }
+  },
+  {
+    "id": "15",
+    "workflow_id": "3",
+    "name": "Investigate Issue",
+    "step_type": "task",
+    "order": 3,
+    "metadata": {
+      "instructions": "Assigned team investigates and resolves the issue"
+    }
+  },
+  {
+    "id": "16",
+    "workflow_id": "3",
+    "name": "Quality Review",
+    "step_type": "approval",
+    "order": 4,
+    "metadata": {
+      "assignee_email": "supervisor@company.com",
+      "instructions": "Supervisor reviews the resolution for quality"
+    }
+  },
+  {
+    "id": "17",
+    "workflow_id": "3",
+    "name": "Notify Customer",
+    "step_type": "notification",
+    "order": 5,
+    "metadata": {
+      "notification_channel": "email",
+      "instructions": "Send resolution details to customer"
+    }
+  },
+  {
+    "id": "18",
+    "workflow_id": "4",
+    "name": "Submit Document",
+    "step_type": "task",
+    "order": 1,
+    "metadata": {
+      "instructions": "Employee submits document for approval"
+    }
+  },
+  {
+    "id": "19",
+    "workflow_id": "4",
+    "name": "Manager Review",
+    "step_type": "approval",
+    "order": 2,
+    "metadata": {
+      "assignee_email": "manager@company.com",
+      "instructions": "Direct manager reviews and approves document"
+    }
+  },
+  {
+    "id": "20",
+    "workflow_id": "4",
+    "name": "Legal Review",
+    "step_type": "approval",
+    "order": 3,
+    "metadata": {
+      "assignee_email": "legal@company.com",
+      "instructions": "Legal team reviews for compliance (if required)"
+    }
+  },
+  {
+    "id": "21",
+    "workflow_id": "4",
+    "name": "Final Approval",
+    "step_type": "approval",
+    "order": 4,
+    "metadata": {
+      "assignee_email": "director@company.com",
+      "instructions": "Director gives final approval"
+    }
+  },
+  {
+    "id": "22",
+    "workflow_id": "4",
+    "name": "Archive Document",
+    "step_type": "task",
+    "order": 5,
+    "metadata": {
+      "instructions": "Approved document is archived and distributed"
+    }
+  },
+  {
+    "id": "23",
+    "workflow_id": "5",
+    "name": "Submit Leave Request",
+    "step_type": "task",
+    "order": 1,
+    "metadata": {
+      "instructions": "Employee submits leave request with dates and reason"
+    }
+  },
+  {
+    "id": "24",
+    "workflow_id": "5",
+    "name": "Manager Approval",
+    "step_type": "approval",
+    "order": 2,
+    "metadata": {
+      "assignee_email": "manager@company.com",
+      "instructions": "Manager approves or denies leave request"
+    }
+  },
+  {
+    "id": "25",
+    "workflow_id": "5",
+    "name": "HR Processing",
+    "step_type": "task",
+    "order": 3,
+    "metadata": {
+      "instructions": "HR updates leave balance and records"
+    }
+  },
+  {
+    "id": "26",
+    "workflow_id": "5",
+    "name": "Notify Employee",
+    "step_type": "notification",
+    "order": 4,
+    "metadata": {
+      "notification_channel": "email",
+      "instructions": "Send leave confirmation to employee"
+    }
+  }
+]

@@ -1,0 +1,415 @@
+[
+  {
+    "id": "1",
+    "workflow_id": "1",
+    "workflow_version": 1,
+    "data": {
+      "amount": 1200,
+      "department": "Finance",
+      "employee_name": "Arjun",
+      "expense_type": "Training",
+      "description": "Online certification course"
+    },
+    "triggered_by": "system",
+    "status": "completed",
+    "logs": [],
+    "retries": 0,
+    "started_at": "2026-03-16T07:29:25.764Z",
+    "ended_at": "2026-03-16T07:35:25.764Z"
+  },
+  {
+    "id": "2",
+    "workflow_id": "19",
+    "workflow_version": 1,
+    "data": {
+      "amount": "2500",
+      "department": "IT",
+      "employee_name": "Poornima",
+      "expense_type": "Travel",
+      "description": "Client meeting travel expense"
+    },
+    "triggered_by": "system",
+    "status": "canceled",
+    "logs": [
+      {
+        "step_name": "Manager Approval",
+        "step_type": "approval",
+        "evaluated_rules": [],
+        "selected_next_step": null,
+        "status": "failed",
+        "started_at": "2026-03-16T07:36:40.041Z",
+        "ended_at": "2026-03-16T07:38:40.041Z",
+        "error_message": "Approval timeout - no response received within 24 hours"
+      }
+    ],
+    "retries": 3,
+    "started_at": "2026-03-16T07:36:40.041Z",
+    "ended_at": "2026-03-17T09:33:35.134Z"
+  },
+  {
+    "id": "3",
+    "workflow_id": "19",
+    "workflow_version": 1,
+    "data": {
+      "amount": "3500",
+      "department": "IT",
+      "employee_name": "Rahul",
+      "expense_type": "Equipment",
+      "description": "New laptop purchase"
+    },
+    "triggered_by": "user",
+    "status": "completed",
+    "logs": [
+      {
+        "step_name": "Initial Review",
+        "step_type": "task",
+        "evaluated_rules": [
+          {
+            "condition": "amount > 3000",
+            "result": true,
+            "next_step_id": "approval_step_2"
+          }
+        ],
+        "selected_next_step": "approval_step_2",
+        "status": "completed",
+        "started_at": "2026-03-17T04:30:00.000Z",
+        "ended_at": "2026-03-17T04:31:00.000Z"
+      },
+      {
+        "step_name": "Director Approval",
+        "step_type": "approval",
+        "evaluated_rules": [],
+        "selected_next_step": null,
+        "status": "in_progress",
+        "started_at": "2026-03-17T04:31:00.000Z",
+        "approver_id": "director@company.com"
+      }
+    ],
+    "retries": 0,
+    "started_at": "2026-03-17T04:30:00.000Z",
+    "ended_at": "2026-03-17T05:33:38.787Z"
+  },
+  {
+    "id": "4",
+    "workflow_id": "19",
+    "workflow_version": 1,
+    "data": {
+      "amount": "2500",
+      "department": "IT",
+      "employee_name": "Aishwarya",
+      "expense_type": "Travel",
+      "description": "Client meeting travel expense"
+    },
+    "triggered_by": "system",
+    "status": "completed",
+    "logs": [],
+    "retries": 0,
+    "started_at": "2026-03-16T08:41:08.799Z",
+    "ended_at": "2026-03-16T08:45:08.799Z"
+  },
+  {
+    "id": "5",
+    "workflow_id": "19",
+    "workflow_version": 1,
+    "data": {
+      "amount": "800",
+      "department": "HR",
+      "employee_name": "Anita Sharma",
+      "expense_type": "Meals",
+      "description": "Team lunch expense"
+    },
+    "triggered_by": "system",
+    "status": "completed",
+    "logs": [],
+    "retries": 0,
+    "started_at": "2026-03-16T08:53:20.506Z",
+    "ended_at": "2026-03-16T08:55:20.506Z"
+  },
+  {
+    "id": "6",
+    "workflow_id": "19",
+    "workflow_version": 1,
+    "data": {
+      "amount": "5000",
+      "department": "Marketing",
+      "employee_name": "Vikram",
+      "expense_type": "Conference",
+      "description": "Tech conference registration"
+    },
+    "triggered_by": "user",
+    "status": "pending",
+    "logs": [],
+    "retries": 0,
+    "started_at": "2026-03-17T05:00:00.000Z"
+  },
+  {
+    "id": "7",
+    "workflow_id": "19",
+    "workflow_version": 1,
+    "data": {
+      "amount": "800",
+      "department": "HR",
+      "employee_name": "Anita",
+      "expense_type": "Meals",
+      "description": "Team lunch expense"
+    },
+    "triggered_by": "system",
+    "status": "completed",
+    "logs": [],
+    "retries": 0,
+    "started_at": "2026-03-16T09:11:55.967Z",
+    "ended_at": "2026-03-16T09:15:55.967Z"
+  },
+  {
+    "id": "8",
+    "workflow_id": "7",
+    "workflow_version": 1,
+    "data": {
+      "employee_name": "Aishwarya",
+      "employee_id": "EMP001",
+      "leave_type": "Annual",
+      "start_date": "2026-03-20",
+      "end_date": "2026-03-25",
+      "reason": "Family vacation",
+      "backup_contact": "Poornima"
+    },
+    "triggered_by": "system",
+    "status": "completed",
+    "logs": [],
+    "retries": 0,
+    "started_at": "2026-03-17T05:16:20.871Z",
+    "ended_at": "2026-03-17T05:20:20.871Z"
+  },
+  {
+    "id": "9",
+    "workflow_id": "7",
+    "workflow_version": 1,
+    "data": {
+      "employee_name": "Aishwarya",
+      "employee_id": "EMP001",
+      "leave_type": "Sick",
+      "start_date": "2026-03-18",
+      "end_date": "2026-03-18",
+      "reason": "Medical appointment",
+      "backup_contact": "Ravi Kumar"
+    },
+    "triggered_by": "user",
+    "status": "in_progress",
+    "logs": [
+      {
+        "step_name": "HR Review",
+        "step_type": "approval",
+        "evaluated_rules": [],
+        "selected_next_step": null,
+        "status": "in_progress",
+        "started_at": "2026-03-17T05:18:16.255Z",
+        "approver_id": "hr@company.com"
+      }
+    ],
+    "retries": 0,
+    "started_at": "2026-03-17T05:18:16.255Z"
+  },
+  {
+    "id": "10",
+    "workflow_id": "19",
+    "workflow_version": 1,
+    "data": {
+      "amount": "1500",
+      "department": "Sales",
+      "employee_name": "Michael",
+      "expense_type": "Client Entertainment",
+      "description": "Client dinner meeting"
+    },
+    "triggered_by": "user",
+    "status": "canceled",
+    "logs": [
+      {
+        "step_name": "Initial Review",
+        "step_type": "task",
+        "evaluated_rules": [],
+        "selected_next_step": null,
+        "status": "completed",
+        "started_at": "2026-03-17T03:00:00.000Z",
+        "ended_at": "2026-03-17T03:01:00.000Z"
+      }
+    ],
+    "retries": 0,
+    "started_at": "2026-03-17T03:00:00.000Z",
+    "ended_at": "2026-03-17T03:30:00.000Z"
+  },
+  {
+    "id": "11",
+    "workflow_id": "20",
+    "workflow_version": 1,
+    "data": {
+      "amount": 3500,
+      "employee_name": "John Smith",
+      "department": "IT",
+      "expense_type": "Equipment",
+      "description": "New laptop and monitor setup"
+    },
+    "triggered_by": "user",
+    "status": "in_progress",
+    "logs": [
+      {
+        "step_name": "Submit Expense",
+        "step_type": "task",
+        "evaluated_rules": [],
+        "selected_next_step": "51",
+        "status": "completed",
+        "started_at": "2026-03-17T10:00:00.000Z",
+        "ended_at": "2026-03-17T10:01:00.000Z"
+      },
+      {
+        "step_name": "Manager Review",
+        "step_type": "approval",
+        "evaluated_rules": [],
+        "selected_next_step": null,
+        "status": "in_progress",
+        "started_at": "2026-03-17T10:01:00.000Z",
+        "approver_id": "manager@company.com"
+      }
+    ],
+    "retries": 0,
+    "started_at": "2026-03-17T10:00:00.000Z"
+  },
+  {
+    "id": "12",
+    "workflow_id": "21",
+    "workflow_version": 1,
+    "data": {
+      "amount": 5000,
+      "employee_name": "Sarah Johnson",
+      "department": "Marketing",
+      "expense_type": "Conference",
+      "description": "Annual tech conference registration"
+    },
+    "triggered_by": "user",
+    "status": "in_progress",
+    "logs": [
+      {
+        "step_name": "Submit Request",
+        "step_type": "task",
+        "evaluated_rules": [],
+        "selected_next_step": "56",
+        "status": "completed",
+        "started_at": "2026-03-17T10:05:00.000Z",
+        "ended_at": "2026-03-17T10:06:00.000Z"
+      },
+      {
+        "step_name": "Manager Approval",
+        "step_type": "approval",
+        "evaluated_rules": [],
+        "selected_next_step": null,
+        "status": "in_progress",
+        "started_at": "2026-03-17T10:06:00.000Z",
+        "approver_id": "manager@company.com"
+      }
+    ],
+    "retries": 0,
+    "started_at": "2026-03-17T10:05:00.000Z"
+  },
+  {
+    "id": "13",
+    "workflow_id": "20",
+    "workflow_version": 1,
+    "data": {
+      "amount": 8000,
+      "employee_name": "Michael Chen",
+      "department": "Finance",
+      "expense_type": "Software",
+      "description": "Annual software licenses"
+    },
+    "triggered_by": "user",
+    "status": "in_progress",
+    "logs": [
+      {
+        "step_name": "Submit Expense",
+        "step_type": "task",
+        "evaluated_rules": [],
+        "selected_next_step": "51",
+        "status": "completed",
+        "started_at": "2026-03-17T11:00:00.000Z",
+        "ended_at": "2026-03-17T11:01:00.000Z"
+      },
+      {
+        "step_name": "Manager Review",
+        "step_type": "approval",
+        "evaluated_rules": [],
+        "selected_next_step": "52",
+        "status": "completed",
+        "started_at": "2026-03-17T11:01:00.000Z",
+        "ended_at": "2026-03-17T11:02:00.000Z",
+        "approver_id": "manager@company.com"
+      },
+      {
+        "step_name": "Finance Approval",
+        "step_type": "approval",
+        "evaluated_rules": [],
+        "selected_next_step": null,
+        "status": "in_progress",
+        "started_at": "2026-03-17T11:02:00.000Z",
+        "approver_id": "finance@company.com"
+      }
+    ],
+    "retries": 0,
+    "started_at": "2026-03-17T11:00:00.000Z"
+  },
+  {
+    "id": "11",
+    "workflow_id": "7",
+    "workflow_version": 1,
+    "data": {
+      "employee_name": "Aishwarya R",
+      "employee_id": "EMP1023",
+      "leave_type": "Annual",
+      "start_date": "2026-03-20",
+      "end_date": "2026-03-25",
+      "reason": "Family vacation",
+      "backup_contact": "Ravi Kumar (EMP2045)"
+    },
+    "triggered_by": "system",
+    "status": "completed",
+    "logs": [],
+    "retries": 0,
+    "started_at": "2026-03-17T09:45:40.088Z"
+  },
+  {
+    "id": "12",
+    "workflow_id": "7",
+    "workflow_version": 1,
+    "data": {
+      "employee_name": "Aishwarya R",
+      "employee_id": "EMP1023",
+      "leave_type": "Annual",
+      "start_date": "2026-03-20",
+      "end_date": "2026-05-25",
+      "reason": "Family vacation",
+      "backup_contact": "Ravi Kumar (EMP2045)"
+    },
+    "triggered_by": "system",
+    "status": "completed",
+    "logs": [],
+    "retries": 0,
+    "started_at": "2026-03-17T09:47:57.338Z"
+  },
+  {
+    "id": "13",
+    "workflow_id": "7",
+    "workflow_version": 1,
+    "data": {
+      "employee_name": "Aishwarya R",
+      "employee_id": "EMP1023",
+      "leave_type": "Annual",
+      "start_date": "2026-02-20",
+      "end_date": "2026-01-25",
+      "reason": "Family Function",
+      "backup_contact": "Ravi Kumar (EMP2045)"
+    },
+    "triggered_by": "system",
+    "status": "completed",
+    "logs": [],
+    "retries": 0,
+    "started_at": "2026-03-17T09:48:57.244Z"
+  }
+]

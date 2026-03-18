@@ -1,0 +1,268 @@
+[
+  {
+    "id": "1",
+    "step_id": "1",
+    "condition": "amount <= 1000",
+    "next_step_id": "2",
+    "priority": 1,
+    "is_default": false,
+    "created_at": "2026-03-16T05:22:38.838Z",
+    "updated_at": "2026-03-16T05:22:38.838Z"
+  },
+  {
+    "id": "2",
+    "step_id": "1",
+    "condition": "amount > 1000",
+    "next_step_id": "3",
+    "priority": 2,
+    "is_default": false,
+    "created_at": "2026-03-16T05:22:38.838Z",
+    "updated_at": "2026-03-16T05:22:38.838Z"
+  },
+  {
+    "id": "3",
+    "step_id": "2",
+    "condition": "amount <= 500",
+    "next_step_id": "4",
+    "priority": 1,
+    "is_default": false,
+    "created_at": "2026-03-16T05:22:38.838Z",
+    "updated_at": "2026-03-16T05:22:38.838Z"
+  },
+  {
+    "id": "4",
+    "step_id": "2",
+    "condition": "amount > 500",
+    "next_step_id": "3",
+    "priority": 2,
+    "is_default": false,
+    "created_at": "2026-03-16T05:22:38.838Z",
+    "updated_at": "2026-03-16T05:22:38.838Z"
+  },
+  {
+    "id": "5",
+    "step_id": "3",
+    "condition": "true",
+    "next_step_id": "4",
+    "priority": 1,
+    "is_default": false,
+    "created_at": "2026-03-16T05:22:38.838Z",
+    "updated_at": "2026-03-16T05:22:38.838Z"
+  },
+  {
+    "id": "6",
+    "step_id": "4",
+    "condition": "true",
+    "next_step_id": "5",
+    "priority": 1,
+    "is_default": false,
+    "created_at": "2026-03-16T05:22:38.838Z",
+    "updated_at": "2026-03-16T05:22:38.838Z"
+  },
+  {
+    "id": "7",
+    "step_id": "6",
+    "condition": "true",
+    "next_step_id": "7",
+    "priority": 1,
+    "is_default": false,
+    "created_at": "2026-03-16T05:22:38.838Z",
+    "updated_at": "2026-03-16T05:22:38.838Z"
+  },
+  {
+    "id": "8",
+    "step_id": "7",
+    "condition": "true",
+    "next_step_id": "8",
+    "priority": 1,
+    "is_default": false,
+    "created_at": "2026-03-16T05:22:38.838Z",
+    "updated_at": "2026-03-16T05:22:38.838Z"
+  },
+  {
+    "id": "9",
+    "step_id": "8",
+    "condition": "is_remote == true",
+    "next_step_id": "9",
+    "priority": 1,
+    "is_default": false,
+    "created_at": "2026-03-16T05:22:38.838Z",
+    "updated_at": "2026-03-16T05:22:38.838Z"
+  },
+  {
+    "id": "10",
+    "step_id": "8",
+    "condition": "is_remote == false",
+    "next_step_id": "10",
+    "priority": 2,
+    "is_default": false,
+    "created_at": "2026-03-16T05:22:38.838Z",
+    "updated_at": "2026-03-16T05:22:38.838Z"
+  },
+  {
+    "id": "11",
+    "step_id": "9",
+    "condition": "true",
+    "next_step_id": "10",
+    "priority": 1,
+    "is_default": false,
+    "created_at": "2026-03-16T05:22:38.838Z",
+    "updated_at": "2026-03-16T05:22:38.838Z"
+  },
+  {
+    "id": "12",
+    "step_id": "10",
+    "condition": "true",
+    "next_step_id": "11",
+    "priority": 1,
+    "is_default": false,
+    "created_at": "2026-03-16T05:22:38.838Z",
+    "updated_at": "2026-03-16T05:22:38.838Z"
+  },
+  {
+    "id": "13",
+    "step_id": "11",
+    "condition": "true",
+    "next_step_id": "12",
+    "priority": 1,
+    "is_default": false,
+    "created_at": "2026-03-16T05:22:38.839Z",
+    "updated_at": "2026-03-16T05:22:38.839Z"
+  },
+  {
+    "id": "14",
+    "step_id": "13",
+    "condition": "priority == \"Critical\"",
+    "next_step_id": "15",
+    "priority": 1,
+    "is_default": false
+  },
+  {
+    "id": "15",
+    "step_id": "13",
+    "condition": "priority == \"High\"",
+    "next_step_id": "15",
+    "priority": 2,
+    "is_default": false
+  },
+  {
+    "id": "16",
+    "step_id": "13",
+    "condition": "true",
+    "next_step_id": "14",
+    "priority": 3,
+    "is_default": false
+  },
+  {
+    "id": "17",
+    "step_id": "14",
+    "condition": "true",
+    "next_step_id": "15",
+    "priority": 1,
+    "is_default": false
+  },
+  {
+    "id": "18",
+    "step_id": "15",
+    "condition": "true",
+    "next_step_id": "16",
+    "priority": 1,
+    "is_default": false
+  },
+  {
+    "id": "19",
+    "step_id": "16",
+    "condition": "true",
+    "next_step_id": "17",
+    "priority": 1,
+    "is_default": false
+  },
+  {
+    "id": "20",
+    "step_id": "18",
+    "condition": "document_type == \"Contract\"",
+    "next_step_id": "19",
+    "priority": 1,
+    "is_default": false
+  },
+  {
+    "id": "21",
+    "step_id": "18",
+    "condition": "document_type == \"Invoice\"",
+    "next_step_id": "19",
+    "priority": 2,
+    "is_default": false
+  },
+  {
+    "id": "22",
+    "step_id": "18",
+    "condition": "true",
+    "next_step_id": "19",
+    "priority": 3,
+    "is_default": false
+  },
+  {
+    "id": "23",
+    "step_id": "19",
+    "condition": "document_type == \"Contract\" || urgency_level == \"Critical\"",
+    "next_step_id": "20",
+    "priority": 1,
+    "is_default": false
+  },
+  {
+    "id": "24",
+    "step_id": "19",
+    "condition": "true",
+    "next_step_id": "21",
+    "priority": 2,
+    "is_default": false
+  },
+  {
+    "id": "25",
+    "step_id": "20",
+    "condition": "true",
+    "next_step_id": "21",
+    "priority": 1,
+    "is_default": false
+  },
+  {
+    "id": "26",
+    "step_id": "21",
+    "condition": "true",
+    "next_step_id": "22",
+    "priority": 1,
+    "is_default": false
+  },
+  {
+    "id": "27",
+    "step_id": "23",
+    "condition": "leave_type == \"Maternity\"",
+    "next_step_id": "24",
+    "priority": 1,
+    "is_default": false
+  },
+  {
+    "id": "28",
+    "step_id": "23",
+    "condition": "true",
+    "next_step_id": "24",
+    "priority": 2,
+    "is_default": false
+  },
+  {
+    "id": "29",
+    "step_id": "24",
+    "condition": "true",
+    "next_step_id": "25",
+    "priority": 1,
+    "is_default": false
+  },
+  {
+    "id": "30",
+    "step_id": "25",
+    "condition": "true",
+    "next_step_id": "26",
+    "priority": 1,
+    "is_default": false
+  }
+]

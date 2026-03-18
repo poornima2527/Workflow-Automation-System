@@ -1,0 +1,23 @@
+{
+  "name": "workflow-automation-system",
+  "version": "1.0.0",
+  "description": "A complete workflow automation system similar to Zapier/n8n",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "build": "cd frontend && npm run build",
+    "deploy": "./deploy.sh",
+    "deploy-docker": "docker-compose up -d --build",
+    "deploy-vercel": "vercel --prod",
+    "deploy-netlify": "cd frontend && npm run build && netlify deploy --prod --dir=build"
+  },
+  "keywords": ["workflow", "automation", "nodejs", "express", "mongodb", "react"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

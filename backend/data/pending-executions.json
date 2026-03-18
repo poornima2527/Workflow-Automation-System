@@ -1,0 +1,74 @@
+[
+  {
+    "id": "11",
+    "workflow_id": "20",
+    "workflow_version": 1,
+    "data": {
+      "amount": 3500,
+      "employee_name": "John Smith",
+      "department": "IT",
+      "expense_type": "Equipment",
+      "description": "New laptop and monitor setup"
+    },
+    "triggered_by": "user",
+    "status": "in_progress",
+    "logs": [
+      {
+        "step_name": "Submit Expense",
+        "step_type": "task",
+        "evaluated_rules": [],
+        "selected_next_step": "51",
+        "status": "completed",
+        "started_at": "2026-03-17T10:00:00.000Z",
+        "ended_at": "2026-03-17T10:01:00.000Z"
+      },
+      {
+        "step_name": "Manager Review",
+        "step_type": "approval",
+        "evaluated_rules": [],
+        "selected_next_step": null,
+        "status": "in_progress",
+        "started_at": "2026-03-17T10:01:00.000Z",
+        "approver_id": "manager@company.com"
+      }
+    ],
+    "retries": 0,
+    "started_at": "2026-03-17T10:00:00.000Z"
+  },
+  {
+    "id": "12",
+    "workflow_id": "21",
+    "workflow_version": 1,
+    "data": {
+      "amount": 5000,
+      "employee_name": "Sarah Johnson",
+      "department": "Marketing",
+      "expense_type": "Conference",
+      "description": "Annual tech conference registration"
+    },
+    "triggered_by": "user",
+    "status": "in_progress",
+    "logs": [
+      {
+        "step_name": "Submit Request",
+        "step_type": "task",
+        "evaluated_rules": [],
+        "selected_next_step": "56",
+        "status": "completed",
+        "started_at": "2026-03-17T10:05:00.000Z",
+        "ended_at": "2026-03-17T10:06:00.000Z"
+      },
+      {
+        "step_name": "Manager Approval",
+        "step_type": "approval",
+        "evaluated_rules": [],
+        "selected_next_step": null,
+        "status": "in_progress",
+        "started_at": "2026-03-17T10:06:00.000Z",
+        "approver_id": "manager@company.com"
+      }
+    ],
+    "retries": 0,
+    "started_at": "2026-03-17T10:05:00.000Z"
+  }
+]

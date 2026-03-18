@@ -1,0 +1,56 @@
+{
+  "name": "Complete Expense Approval Workflow",
+  "input_schema": {
+    "amount": {"type": "number", "required": true},
+    "employee_name": {"type": "string", "required": true},
+    "department": {"type": "string", "required": true},
+    "expense_type": {"type": "string", "required": true},
+    "description": {"type": "string", "required": false}
+  },
+  "is_active": true,
+  "steps": [
+    {
+      "name": "Submit Expense",
+      "step_type": "task",
+      "order": 1,
+      "metadata": {
+        "instructions": "Employee submits expense details"
+      }
+    },
+    {
+      "name": "Manager Review",
+      "step_type": "approval",
+      "order": 2,
+      "metadata": {
+        "assignee_email": "manager@company.com",
+        "instructions": "Manager reviews and approves expense"
+      }
+    },
+    {
+      "name": "Finance Approval",
+      "step_type": "approval", 
+      "order": 3,
+      "metadata": {
+        "assignee_email": "finance@company.com",
+        "instructions": "Finance team approves large expenses"
+      }
+    },
+    {
+      "name": "Process Payment",
+      "step_type": "task",
+      "order": 4,
+      "metadata": {
+        "instructions": "Finance team processes payment"
+      }
+    },
+    {
+      "name": "Notify Employee",
+      "step_type": "notification",
+      "order": 5,
+      "metadata": {
+        "notification_channel": "email",
+        "instructions": "Notify employee of payment status"
+      }
+    }
+  ]
+}

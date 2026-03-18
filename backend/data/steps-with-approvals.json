@@ -1,0 +1,65 @@
+[
+  {
+    "id": "50",
+    "workflow_id": "20",
+    "name": "Submit Expense",
+    "step_type": "task",
+    "order": 1,
+    "metadata": {
+      "instructions": "Employee submits expense details"
+    },
+    "created_at": "2026-03-17T00:00:00.000Z",
+    "updated_at": "2026-03-17T00:00:00.000Z"
+  },
+  {
+    "id": "51",
+    "workflow_id": "20",
+    "name": "Manager Review",
+    "step_type": "approval",
+    "order": 2,
+    "metadata": {
+      "assignee_email": "manager@company.com",
+      "instructions": "Manager reviews and approves expense"
+    },
+    "created_at": "2026-03-17T00:00:00.000Z",
+    "updated_at": "2026-03-17T00:00:00.000Z"
+  },
+  {
+    "id": "52",
+    "workflow_id": "20",
+    "name": "Finance Approval",
+    "step_type": "approval",
+    "order": 3,
+    "metadata": {
+      "assignee_email": "finance@company.com",
+      "instructions": "Finance team approves large expenses"
+    },
+    "created_at": "2026-03-17T00:00:00.000Z",
+    "updated_at": "2026-03-17T00:00:00.000Z"
+  },
+  {
+    "id": "53",
+    "workflow_id": "20",
+    "name": "Process Payment",
+    "step_type": "task",
+    "order": 4,
+    "metadata": {
+      "instructions": "Finance team processes payment"
+    },
+    "created_at": "2026-03-17T00:00:00.000Z",
+    "updated_at": "2026-03-17T00:00:00.000Z"
+  },
+  {
+    "id": "54",
+    "workflow_id": "20",
+    "name": "Notify Employee",
+    "step_type": "notification",
+    "order": 5,
+    "metadata": {
+      "notification_channel": "email",
+      "instructions": "Notify employee of payment status"
+    },
+    "created_at": "2026-03-17T00:00:00.000Z",
+    "updated_at": "2026-03-17T00:00:00.000Z"
+  }
+]
