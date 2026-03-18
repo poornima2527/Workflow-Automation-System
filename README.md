@@ -21,10 +21,13 @@ Key Features
 Technology Stack
 
 Frontend
+
  React.js
  Ant Design
  Axios
+ 
 Backend
+
  Node.js
  Express.js
  Data Handling
